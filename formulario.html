@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aulacity</title>
+    <meta charset="utf-8">
+    <meta name=robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img/codoacodo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/script.js"></script>
+
+    <!--- Librería Sweet Alert (Personaliza las alertas => https://sweetalert2.github.io/ --->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+       
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="row align-items-center justify-content-between">
+              <div class="logo">
+                 <img href="./inicio.html" id="logo-pagina" src="img/logo.png" width="100" alt="Logo-Aulacity">
+                 <a href="./inicio.html"> Aulacity</a>
+              </div>
+              <button type="button" class="nav-toggler">
+                 <span></span>
+              </button>
+              <nav class="nav">
+                 <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="#">Materias</a></li>
+                    <li><a href="#">Inscripciones</a></li>
+                    <li><a href="formulario.html" class="active" >Contacto</a></li>
+                 </ul>
+              </nav>
+           </div>
+        </div>
+     </header>
+     <script src="js/script.js"></script>
+     <div id="progressBar"></div>
+  
+    <div class="contactForm">
+        <form action="formulario.html" class="form" id="formulario" onsubmit="return validarFormulario()">
+        <h1 class="title">Contacto</h1>
+
+        <div class="inputContainer">
+            <input type="email" class="input" id="email" placeholder="Ingrese su Correo usuario@dominio.com">
+            <label for="email" class="label">Email</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" class="input" id="nombre" placeholder="Ingrese su nombre">
+            <label for="nombre" class="label">Nombre</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" class="input" id="apellido" placeholder="Ingrese su apellido">
+            <label for="apellido" class="label">Apellido</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="tel" class="input" id="telefono" placeholder="Ingrese su teléfono, SÓLO NÚMEROS">
+            <label for="telefono" class="label">Teléfono</label>
+        </div>
+
+        <div class="inputContainer">
+            <textarea class="mensaje" id="mensaje" minlength="10" maxlength="136" placeholder="Ingrese su mensaje"></textarea>
+            <label for="mensaje" class="label">Mensaje</label>
+        </div><br><br><br>
+
+        <label for="motivo">Motivo del contacto:</label>
+        <select id="motivo" name="motivo">
+            <option value="">Seleccione una opción</option>
+            <option value="Sugerencia">Sugerencia</option>
+            <option value="Queja">Queja</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terminos" name="terminos">
+       <label for="terminos" class="labelCheck">Acepto los términos y condiciones</label>
+
+        <div style="display:flex;">
+            <input type="submit" class="submitBtn" value="Enviar">
+    
+            <button type="reset" class="submitBtn-reset">Reiniciar</button>
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>

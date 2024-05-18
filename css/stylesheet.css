@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(../img/Tribuna_uffizi.jpg);
+    background-size: cover;
+    image-rendering: crisp-edges;
+}
+#kiko-slider {
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#kiko-slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#kiko-slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#kiko-slider>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#kiko-slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#kiko-slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#kiko-slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#kiko-slider>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#kiko-slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#kiko-slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#kiko-slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+.navegacion {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 10px 20px;
+    padding: 15px;
+}
+
+    .navegacion a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navegacion a:hover {
+        background-color: #9867C5;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .navegacion li {
+        display: inline;
+        text-align: center;
+        margin: 0 10px 0 0;
+    }
+
+    .navegacion ul li {
+
+        margin: 0 15px 0 15px;
+        padding: 3px;
+        justify-content: space-evenly;
+        overflow: auto;
+    }
+
+/* Estilos para la barra de progreso */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px; /* Altura de la barra de progreso */
+    background-color: #c590f7; /* Color azul */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+    .card {
+        width: 325px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        gap: 5px;
+        overflow: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card img:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    .card-content {
+        padding: 16px;
+        overflow: auto;
+        text-align: justify;
+    }
+
+    .card-content h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .card-content p {
+        color: rgb(21, 19, 19);
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .card-content .btn {
+        display: flex;
+        justify-content: center;
+        padding: 8px 16px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .card-content .btn:hover {
+        background-color: #9867C5;
+        transform: translateY(-2px);
+    }
