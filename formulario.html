@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
-    <script src="js/script.js"></script>
-
+    
     <!--- Librería Sweet Alert (Personaliza las alertas => https://sweetalert2.github.io/ --->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-       
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
@@ -26,7 +24,7 @@
            <div class="row align-items-center justify-content-between">
               <div class="logo">
                  <img href="./inicio.html" id="logo-pagina" src="img/logo.png" width="100" alt="Logo-Aulacity">
-                 <a href="./inicio.html"> Aulacity</a>
+                 <a  href="./inicio.html" class="inicio-logo" > Aulacity </a>
               </div>
               <button type="button" class="nav-toggler">
                  <span></span>
@@ -35,13 +33,15 @@
                  <ul>
                     <li><a href="./inicio.html">Inicio</a></li>
                     <li><a href="./Quienes.html">¿Quienes Somos?</a></li>
-                    <li><a href="#">Materias</a></li>
+                    <li><a href="./materias.html">Materias </a></li>
                     <li><a href="./formulario.html" class="active">Contacto</a></li>
                  </ul>
               </nav>
            </div>
         </div>
      </header>
+
+     <script src="js/form.js"></script>
      <script src="js/script.js"></script>
      <div id="progressBar"></div>
   
@@ -50,7 +50,7 @@
         <h1 class="title">Contacto</h1>
 
         <div class="inputContainer">
-            <input type="email" class="input" id="email" placeholder="Ingrese su Correo usuario@dominio.com">
+            <input type="email" class="input" id="email" placeholder="Ingrese su correo usuario@dominio.com">
             <label for="email" class="label">Email</label>
         </div>
 
@@ -92,8 +92,38 @@
           </div>
         </form>
     </div>
-<-- Prueba de Git pull -->
 
-
+    <footer class="footer">
+        <div class="footer-container">
+           <div class="footer-row">
+              <div class="footer-col">
+                 <h4>Grupo Nro 5</h4>
+                 <ul>
+                    <li><a href="#">Juan Mendez</a></li>
+                    <li><a href="#">Nelson Gomez</a></li>
+                    <li><a href="#">Agustin Doratto</a></li>
+                    <li><a href="#">Salvador Durand</a></li>
+                 </ul>
+              </div>
+              
+              <div class="footer-col">
+                 <h4>Codo a Codo</h4>
+                 <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Linkedink</a></li>
+                 </ul>
+              </div>
+              <div class="footer-col">
+                 <h4>Accesos al Código</h4>
+                 <div class="social-links">
+                    <a href="https://github.com/Calacanera/TPclassroom" target="_blank"><i class="fa-brands fa-github  fa-xl"></i></a>
+                    <a href="https://netlify.app/" target="_blank"><i class="fa-solid fa-cubes fa-xl"></i></a>
+                    <a href="https://validator.w3.org/" target="_blank"><i class="fa-regular fa-file-code fa-xl"></i></a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </footer>
 </body>
 </html>
