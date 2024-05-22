@@ -3,13 +3,12 @@
 <head>
    <title>Aulacity</title>
    <meta charset="utf-8">
-   <meta name="robots" content="index,follow">
+   <meta name=robots" content="index,follow">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="shortcut icon" href="img/codoacodo.png" type="image/x-icon">
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/footer.css">
-   
 
    <!-- https://fontawesome.com/search?o=r&m=free -->
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -29,7 +28,7 @@
             <nav class="nav">
                <ul>
                   <li><a href="./inicio.html">Inicio</a></li>
-                  <li><a href="./quienes.html">¿Quienes Somos?</a></li>
+                  <li><a href="./Quienes.html">¿Quienes Somos?</a></li>
                   <li><a href="./materias.html" class="active">Materias </a></li>
                   <li><a href="./formulario.html">Contacto</a></li>
                </ul>
@@ -42,8 +41,45 @@
 
    <!-- Inicio de Slider -->
    <main>
+      <script>
+         function mostrarTema() {
+           var select = document.getElementById("materias");
+           var tema = document.getElementById("tema");
+           var sintesis = document.getElementById("sintesis");
+           var video = document.getElementById("video");
+     
+           if (select.value === "matematicas") {
+             tema.style.display = "block";
+             sintesis.style.display = "block";
+             video.style.display = "block";
+           } else {
+             tema.style.display = "none";
+             sintesis.style.display = "none";
+             video.style.display = "none";
+           }
+         }
+       </script>
+       <form>
+         <label for="materias">Selecciona una materia:</label>
+         <select id="materias" onchange="mostrarTema()">
+           <option value="">Selecciona una opción</option>
+           <option value="matematicas">Matemáticas</option>
+           <option value="fisica">Física</option>
+           <option value="quimica">Química</option>
+         </select>
+         <p id="tema" style="display: none;">El tema de Matemáticas es: Álgebra Lineal</p>
+         <p id="sintesis" style="display: none;">Síntesis del tema: Cuando observamos a los objetos desde un punto de vista distinto podemos apreciar mejor algunas características que antes pasamos inadvertidas. Esta es justo la intención de las transformaciones lineales, que podamos apreciar características de los sistemas de ecuaciones lineales que difícilmente captamos directamente de las ecuaciones algebraicas.
 
+            En álgebra lineal las transformaciones son funciones que toman un vector v del espacio vectorial V y lo convierten en otro vector w que pertenece a un espacio vectorial distinto W
+            
+            Una transformación lineal puede tener una infinidad de efectos distintos sobre un vector. Entre los efectos más comunes que producen las transformaciones lineales sobre los vectores tenemos las expansiones, contracciones, reflexiones, proyecciones y rotaciones, aunque son frecuentes las transformaciones lineales que implican una combinación de los efectos anteriores.
+         </p>
+         <p id="video" style="display: none;">Espacio para video explicativo:
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kYB8IZa5AuE?si=qCfliyfJ6mBg-gYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </p>
+       </form>
    </main>
+
 
 
   <!-- Inicio de Footer -->
@@ -66,7 +102,7 @@
                <ul>
                   <li><a href="#">Instagram</a></li>
                   <li><a href="#">Facebook</a></li>
-                  <li><a href="#">linkedin</a></li>
+                  <li><a href="#">Linkedink</a></li>
                </ul>
             </div>
             <div class="footer-col">

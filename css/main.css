@@ -8,7 +8,9 @@ main{
     width: 100%;
     min-height: 700px;
 }
-
+.body{
+    height: fit-content;
+}
 .inicio-logo{
         padding-left: 15%;
         min-height: 7px;
@@ -19,23 +21,65 @@ main{
     width: 100%;
     height: 700px;
 } */
+.introduccion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: 
+        'int-titulo int-titulo'
+        'int-texto int-imagen'
+        'int-texto int-imagen';
+    align-items: center;
+    
+}
+    .int-titulo{
+        grid-area: int-titulo;
+        text-align: center;
+    }
+    .int-imagen{
+        grid-area: int-imagen;
+        max-width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+    .int-texto{
+        grid-area: int-texto;
+        font-family: sans-serif;
+        text-align: justify;
+        line-height: 3em;
+        padding: 5px;
+        background-color: rgb(148, 145, 145);
+    }
+
+    /* .dioses_titulo{
+        grid-area: dioses_titulo;
+    }
+    .dioses_img{
+        grid-area: dioses_img;
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+    .dioses_texto{
+        grid-area: dioses_texto;
+        text-align: justify;
+    } */
+
+
 #kiko-slider {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: white;
+    /* margin: auto;
     max-width: 800px;
-    width: 100%;
+    width: auto;
     padding: 30px;
     margin-top: 50px;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
-#kiko-slider>ul,
-li {
+/* #kiko-slider>ul,li {
     padding: 0;
     margin: 0;
     list-style: none;
-}
+} */
 
 #kiko-slider>ul.slider {
     position: relative;
