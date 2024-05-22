@@ -12,8 +12,12 @@
 body{
 	font-family: sans-serif;
 	background-image: url(../img/Tribuna_uffizi.jpg);
-	background-size: 105%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	background-color: #e8eef3
+	
 }
 
 ul{
