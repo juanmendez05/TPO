@@ -1,4 +1,6 @@
 main{
+    background-image: url(../img/Tribuna_uffizi.jpg);
+    background-size: 105%;
     background-color:rgb(229, 229, 229);
     width: 100%;
     min-height: 700px;
