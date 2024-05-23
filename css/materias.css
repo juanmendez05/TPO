@@ -1,0 +1,38 @@
+.int-materias{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        'int-titulo'
+        'int-texto'
+        'int-video';
+    align-items: center;
+       
+}
+    .int-titulo-mat{
+        grid-area: int-titulo;
+        text-align: center;
+        line-height: 5em;
+    }
+    .int-video-mat{
+        grid-area: int-video;
+        margin-top: 40px;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .int-texto-mat{
+        grid-area: int-texto;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 2em;
+        padding: 5px;
+        background-color: rgba(148, 145, 145, 0.534);
+    }
+
+    .form-mat{
+        margin-top: 30px;
+        margin-left:30px;
+    }
