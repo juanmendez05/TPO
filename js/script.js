@@ -29,3 +29,21 @@ function updateProgressBar() {
 window.onscroll = function() {
    updateProgressBar();
 };
+
+//Materias
+function mostrarTema() {
+   var select = document.getElementById("materias");
+   var tema = document.getElementById("tema");
+   var sintesis = document.getElementById("sintesis");
+   var video = document.getElementById("video");
+
+   if (select.value === "matematicas") {
+     tema.style.display = "block";
+     sintesis.style.display = "block";
+     video.style.display = "block";
+   } else {
+     tema.style.display = "none";
+     sintesis.style.display = "none";
+     video.style.display = "none";
+   }
+ }

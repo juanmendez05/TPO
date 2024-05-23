@@ -43,7 +43,7 @@ main{
     .int-texto{
         grid-area: int-texto;
         font-family: sans-serif;
-        text-align: center;
+        text-align: cen;
         line-height: 3em;
         padding: 5px;
         background-color: rgba(148, 145, 145, 0.534);
