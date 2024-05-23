@@ -33,17 +33,38 @@ window.onscroll = function() {
 //Materias
 function mostrarTema() {
    var select = document.getElementById("materias");
-   var tema = document.getElementById("tema");
-   var sintesis = document.getElementById("sintesis");
-   var video = document.getElementById("video");
-
+   var matematicas = document.getElementById("matematicas1");
+   var quimica = document.getElementById("quimica1");
+   var fisica = document.getElementById("fisica1");
+ 
    if (select.value === "matematicas") {
-     tema.style.display = "block";
-     sintesis.style.display = "block";
-     video.style.display = "block";
+     matematicas.style.display = "block";
+    
    } else {
-     tema.style.display = "none";
-     sintesis.style.display = "none";
-     video.style.display = "none";
+     matematicas.style.display = "none";
    }
+
+   if (select.value === "quimica") {
+      quimica.style.display = "block";
+     
+    } else {
+      quimica.style.display = "none";
+    }
+  
+    if (select.value === "fisica") {
+      fisica.style.display = "block";
+     
+    } else {
+      fisica.style.display = "none";
+    }
+
+   //  if (select.value === "fisica") {
+   //    tema.style.display = "block";
+   //    sintesis.style.display = "block";
+   //    video.style.display = "block";
+   //  } else {
+   //    tema.style.display = "none";
+   //    sintesis.style.display = "none";
+   //    video.style.display = "none";
+   //  }
  }
