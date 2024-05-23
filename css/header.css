@@ -16,7 +16,12 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: #e8eef3
+	background-color: #e8eef3;
+	height: fit-content;
+	min-width: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 	
 }
 

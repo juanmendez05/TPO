@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Img/teachermathsfemale_101116.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/codoacodo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="style.css">
+    <title>Aulacity</title>
+    <!-- https://fontawesome.com/search?o=r&m=free -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <main class="container">
+    <header class="header">
+        <div class="container">
+           <div class="row align-items-center justify-content-between">
+              <div class="logo">
+                 <img id="logo-pagina" src="img/logo.png" width="100" alt="Logo-Aulacity">
+                 <a class="inicio-logo"> Aulacity</a>
+              </div>
+              <button type="button" class="nav-toggler">
+                 <span></span>
+              </button>
+              </div>
+        </div>
+     </header>
+    <main class="container-index" class="main-index">
         <div class="imagen">
-            <header>
-                <h1>Aprender siempre es divertido</h1>
+            <header class="header-index">
+                <h1 class="titulo-index">Aprender siempre es divertido</h1>
             </header>
             
-            <img class="img" src="Img/imagen_principal.jpg" alt="mujer_estudiando">
+            <img class="img-index" src="./img/imagen_principal.jpg" alt="mujer_estudiando">
                        
         </div>
-        <nav>
-            <a class="nav" href="./inicio.html"><p>Inicio</p></a>
+        <nav class="nav-index">
+            <a class="nav-indexa" href="./inicio.html"><p class="button-index">Inicio</p></a>
             <!-- <a class="nav" href="#">pag2</a>
             <a class="nav" href="#">pag3</a> -->
-            <a class="nav" href="./registro.html"><p>Registrate</p></a>
+            <a class="nav-indexa" href="./registro.html"><p class="">Registrate</p></a>
         </nav>
     </main>
 
-    <footer>
-        <br>
-        <div class="sociales">
-            <a href="#" target="_blank"><i class="icono"></i><img src="Img/social_facebook_fb_35.ico" alt="facebook"></a>
-           
-            <a href="#" target="_blank"><i class="icono"><img src="Img/twitterlogoincircularblackbutton_79784.ico" alt="twiter"></i></a>
-           
-            <a href="#" target="_blank"><i class="icono"><img src="Img/social_instagram_3.ico" alt="instagram"></i></a>
-            
-            <a href="#" target="_blank"><i class="icono"><img src="Img/whatsapp_black_logo_icon_147050.ico" alt="whatsapp"></i></a>
-    
-            <a href="#" target="_blank"><i class="icono"><img src="Img/youtube_black_logo_icon_147044.ico" alt="youtube"></i></a>
-    
-            <a href="#" target="_blank"><i class="icono"><img src="Img/tiktok_logo_icon_186928.ico" alt="tiktok"></i></a>
-            <br>
-            <h4>@Derechos Reservados 2024</h4>
-        </div>
-        
-    </footer>
-
+ <!-- Inicio de Footer -->
+ <footer class="footer">
+    <div class="footer-container">
+       <div class="footer-row">
+          <div class="footer-col">
+             <h4>Grupo Nro 5</h4>
+             <ul>
+                <li><a href="https://www.linkedin.com/in/juan-m%C3%A9ndez-53bb0867/"><i class="fa-brands fa-linkedin"></i> Juan Mendez</a></li>
+                <li><a href="https://www.linkedin.com/in/nelson-gomez-66235928a?trk=contact-info"> <i class="fa-brands fa-linkedin"></i> Nelson Gomez</a></li>
+                <li><a href="https://www.linkedin.com/in/agustin-doratto/"><i class="fa-brands fa-linkedin"></i> Agustin Doratto</a></li>
+                <li><a href="https://www.linkedin.com/in/salvador-durand-268095284/"><i class="fa-brands fa-linkedin"></i> Salvador Durand</a></li>
+             </ul>
+          </div>
+          
+          <div class="footer-col">
+             <h4>Nuestras redes</h4>
+             <ul>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i> Tik Tok</a></li>
+             </ul>
+          </div>
+          <div class="footer-col">
+             <h4>Accesos al Código</h4>
+             <div class="social-links">
+                <a href="https://github.com/Calacanera/TPclassroom" target="_blank"><i class="fa-brands fa-github  fa-xl"></i></a>
+                <a href="https://aulacity.netlify.app/" target="_blank"><i class="fa-solid fa-cubes fa-xl"></i></a>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Faulacity.netlify.app%2Finicio.html" target="_blank"><i class="fa-regular fa-file-code fa-xl"></i></a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </footer>
 </body>
 </html>

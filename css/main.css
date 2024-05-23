@@ -8,9 +8,7 @@ main{
     width: 100%;
     min-height: 700px;
 }
-.body{
-    height: fit-content;
-}
+
 .inicio-logo{
         padding-left: 15%;
         min-height: 7px;
@@ -30,7 +28,7 @@ main{
         'int-texto int-imagen'
         'int-texto int-imagen';
     align-items: center;
-    
+       
 }
     .int-titulo{
         grid-area: int-titulo;
@@ -45,10 +43,10 @@ main{
     .int-texto{
         grid-area: int-texto;
         font-family: sans-serif;
-        text-align: justify;
+        text-align: center;
         line-height: 3em;
         padding: 5px;
-        background-color: rgb(148, 145, 145);
+        background-color: rgba(148, 145, 145, 0.534);
     }
 
     /* .dioses_titulo{

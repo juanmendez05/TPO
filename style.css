@@ -1,9 +1,9 @@
-body {
+/* .body-index {
     margin: 0;
     background-color: #e8eef3;
-    }
+    } */
 
-.container {
+.container-index {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -14,12 +14,12 @@ body {
     overflow: none;
 }
 
-.img{
+.img-index{
     object-fit: cover;
     width: 100%;
     border-radius: 15px;
 }
-header{
+.header-index{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(112, 112, 250);
     text-shadow: 3px 3px 3px rgb(250, 231, 196);
@@ -27,7 +27,7 @@ header{
     
 }
 
-nav {
+.nav-index {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,7 +35,7 @@ nav {
     align-items: center;
 }
 
-.nav{
+.nav-indexa{
     background-color: #607cca;
     margin: 3px;
     padding: 8px;
@@ -50,17 +50,27 @@ nav {
     text-shadow: 2px 2px 3px #0056b3;   
 }
 
-.nav:hover{
+.titulo-index{
+text-align: center;
+padding-block: 5%;
+}
+
+.button-index{
+    text-align: center;
+    padding-block: 7%;
+    }
+
+.nav-indexa:hover{
     background-color: rgb(69, 69, 253);
     scale: 1.1;
 }
 
-p{
+.p-index{
     transform: translateY(70%);
 }
 
 
-.reg{
+.reg-index{
     display: flex;
     flex-direction: flex-start;
     text-align: center;
@@ -70,12 +80,12 @@ p{
     /* border: black solid 10px; */
 }
 
-.reg a:hover{
+.reg-index a:hover{
     background-color: #69abf1;
     scale: 1.1;
 }
 
-.reg a{
+.reg-index a{
     background-color: #007bff;
     margin: 3px;
     padding: 3px;
@@ -86,24 +96,27 @@ p{
     /* border: green solid 10px; */
 }
 
-.logo{
+.logo-index{
     background-color: beige;
     height: 40px;
     width: 40px;
     border: black 10px solid;
 }
 
-.sociales{
+.sociales-index{
     text-align: center;
 }
 
 /* Estilo del registro */
-main{
+.main-index{
     height: 200px;
 }
 
 .formulario {
     display: none;
+    opacity: .5;
+    background: #36302e;
+    
 }
 
 .form {
@@ -117,14 +130,18 @@ main{
     overflow: none;
     font-family: Arial,sans-serif;
     color: #007bff;
-    text-shadow: 2px 2px 3px #0056b3;
+    text-shadow: 2px 2px 3px #006adb;
+    opacity: none;
+    
 }
+   
 .form img{
     object-fit: cover;
     width: 600px;
     height: 75vh;
     border-radius: 15px;
     padding: 15px;
+    
 }
 
 
