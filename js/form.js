@@ -7,10 +7,10 @@ function validarFormulario() {
   var telefono = document.getElementById('telefono').value;
   var mensaje = document.getElementById('mensaje').value;
   var motivo = document.getElementById('motivo').value;
-  var terminos = document.getElementById('terminos').checked;
+  //var terminos = document.getElementById('terminos').checked;
 
   // Verificar si algún campo está vacío
-  if (!email || !nombre || !apellido || !telefono || !mensaje || !motivo || !terminos) {
+  if (!email || !nombre || !apellido || !telefono || !mensaje || !motivo) {
     // Mostrar mensaje de error
     swal.fire({
       title: 'Error!',
