@@ -1,0 +1,147 @@
+
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 120px;
+    }
+
+.logo-centrado img{
+    margin-bottom: 5px;
+    padding: 18px;
+    width: 10%;
+    size: 10%;
+}
+
+
+.navbar-index{
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo-nav{height: 60%;
+    overflow: hidden;
+    margin-left: 1em;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 1%;
+    text-align: center;
+    color: #032387;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #032387;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.admintable{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #032387;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    color: rgb(182, 174, 164) !important;
+}
+
+th{
+    text-align: center;
+    border: 1px solid lightslategray;
+}
+
+td{
+    text-align: center;
+    border: 1px solid lightslategray;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+button {
+    padding: 8px;
+    margin:4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.admina{
+    padding: 8px;
+    margin:4px;
+    background-color: #0CC0DF;
+    color: #032387;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+    font-weight: 800;
+ 
+}
+
+.admina:hover{
+    background-color: #0097B2;
+    color:#032387;
+}
+
+.adminform{
+
+    color: #f9f9f9;
+    background-color: #032387;
+    
+}

@@ -9,7 +9,10 @@
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/admin.css">
-     <!-- https://fontawesome.com/search?o=r&m=free -->
+  
+   
+   
+   <!-- https://fontawesome.com/search?o=r&m=free -->
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -42,26 +45,32 @@
            <div class="logo-centrado">
             <img src="./img/admin.png" alt="logo">
         </div>
+
+        <h1>Eliminar Alumno del Inventario</h1><br>
         
-        
-        <h1>CRUD de Alumnos</h1><br>
-        <table class="admintable" class="admina">
-            <tr> 
-                <td class="contenedor-centrado"><a  class="admina" href="altas.html">Alta de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="listado.html">Listado de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="modificaciones.html">Modificar datos de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="listadoEliminar.html">Eliminar alumnos</a></td>
-            </tr>
-        </table>
-        
-   <!-- Inicio de Footer -->
-   <footer class="footer">
+        <table id="alumnos-table" class="adminform" class="admina"> <!-- Se crea una tabla para mostrar los alumnos. -->
+            <thead> <!--Encabezado de la tabla con columnas para código,descripción, cantidad, precio y acciones.-->
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre y Apellido</th>
+                    <th>DNI</th>
+                    <th align="right">Materia</th>
+                    <th align="right">Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+            </tbody>
+        </table><br>
+
+        <div class="contenedor-centrado">
+            <a class="admina" href="/admin.html">Menu Admin</a>
+        </div>
+
+        <script src="./js/listadoEliminar.js"></script>
+ <!-- Inicio de Footer -->
+ <footer class="footer">
     <div class="footer-container">
        <div class="footer-row">
           <div class="footer-col">

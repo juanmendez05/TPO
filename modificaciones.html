@@ -9,7 +9,10 @@
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/admin.css">
-     <!-- https://fontawesome.com/search?o=r&m=free -->
+  
+   
+   
+   <!-- https://fontawesome.com/search?o=r&m=free -->
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -42,26 +45,46 @@
            <div class="logo-centrado">
             <img src="./img/admin.png" alt="logo">
         </div>
+
+        <h1>Modificar Alumnos del Inventario</h1><br>
+    
+        <!-- Contenedor principal que será controlado por JavaScript. Este contenedor tendrá dos formularios. -->
+        <div id="app">
+    
+            <!-- Primer formulario: Selector de producto. LLama a la función obtenerProducto cuando se envíe el formulario -->
+            <form id="form-obtener-alumno" class="adminform">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" required><br>
+                
+                <button type="submit" class="admina">Modificar Alumno</button>
+                <a class="admina" href="/admin.html">Menu Admin</a>
+            </form>
+    
+            <!-- Segundo formulario: se muestra solo si mostrarDatosProducto es verdadero. Llama a la función guardarCambios -->
+            <div id="datos-alumno" style="display: none;">
+                <h2>Datos del Alumno</h2>
+                
+                <form id="form-guardar-cambios">
+                    <label for="nombre_apellidoModificar">Nombre y Apellido:</label>
+                    <input type="text" id="nombre_apellidoModificar" required><br>
+                    
+                    <label for="dniModificar">DNI:</label>
+                    <input type="number" id="dniModificar" required><br>
         
+                    <label for="materiaModificar">Materia:</label>
+                    <input type="text" id="materiaModificar" required><br>
+
+                    <label for="edadModificar">Edad:</label>
+                    <input type="number" id="edadModificar" required><br>
         
-        <h1>CRUD de Alumnos</h1><br>
-        <table class="admintable" class="admina">
-            <tr> 
-                <td class="contenedor-centrado"><a  class="admina" href="altas.html">Alta de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="listado.html">Listado de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="modificaciones.html">Modificar datos de alumnos</a></td>
-            </tr>
-            <tr>
-                <td class="contenedor-centrado "><a class="admina" href="listadoEliminar.html">Eliminar alumnos</a></td>
-            </tr>
-        </table>
-        
-   <!-- Inicio de Footer -->
-   <footer class="footer">
+                    <button type="submit">Guardar Cambios</button>
+                    <a href="modificaciones.html">Cancelar</a>
+                </form>
+            </div>
+        </div>
+        <script src="./js/modificaciones.js"></script>
+<!-- Inicio de Footer -->
+<footer class="footer">
     <div class="footer-container">
        <div class="footer-row">
           <div class="footer-col">
