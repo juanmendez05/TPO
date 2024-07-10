@@ -19,6 +19,7 @@ function obtenerAlumno(event) {
     event.preventDefault();
     codigo = document.getElementById('codigo').value;
     
+    console.log(codigo);
     fetch(URL + 'alumnos/' + codigo)
 
     .then(response => {
